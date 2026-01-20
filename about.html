@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#2d5a4a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>About - Pranil Polymers</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="bg-background text-foreground font-sans antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-card nav-blur border-b">
+      <div class="container flex items-center justify-between h-14 md:h-16">
+        <a href="./index.html" class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg hero-gradient flex items-center justify-center">
+            <svg class="w-5 h-5 text-primary-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 9.4 7.5 4.21"/><path d="M21 8l-9.5-5.5L2 8l9.5 5.5L21 8z"/><path d="M2 8v8l9.5 5.5L21 16V8"/></svg>
+          </div>
+          <span class="font-semibold text-lg">Pranil Polymers</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-1" id="desktop-nav"></nav>
+        <div class="flex items-center gap-2">
+          <a href="./cart.html" class="relative p-2 rounded-lg hover:bg-secondary transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="1"/><circle cx="20" cy="20" r="1"/><path d="M2 2h3l3.6 7.59a2 2 0 0 0 1.7 1.17h7.9a2 2 0 0 0 1.94-1.5l1.3-5.16H6"/></svg>
+            <span id="cart-count" class="hidden absolute -top-1 -right-1 w-5 h-5 rounded-full accent-gradient text-xs font-semibold flex items-center justify-center text-accent-foreground">0</span>
+          </a>
+          <a href="./admin.html" class="hidden md:flex p-2 rounded-lg hover:bg-secondary transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </a>
+          <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-secondary transition-colors" aria-label="Menu">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden border-t bg-card">
+        <nav class="container py-4 space-y-1" id="mobile-nav"></nav>
+      </div>
+    </header>
+
+    <main class="min-h-[calc(100vh-3.5rem)] md:min-h-[calc(100vh-4rem)] pb-24 md:pb-12">
+      <!-- Hero -->
+      <div class="hero-gradient py-12 md:py-16">
+        <div class="container">
+          <h1 class="text-3xl md:text-4xl font-bold text-primary-foreground text-center">About Pranil Polymers</h1>
+          <p class="mt-4 text-primary-foreground/80 text-center max-w-2xl mx-auto">Crafting timeless elegance since 2015</p>
+        </div>
+      </div>
+
+      <!-- Story -->
+      <section class="container py-12">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-2xl font-bold mb-4">Our Story</h2>
+          <div class="space-y-4 text-muted-foreground leading-relaxed">
+            <p>Pranil Polymers was born from a simple belief: everyone deserves access to beautiful, handcrafted accessories that reflect their personal style. Founded in 2015, we started as a small workshop with a passion for traditional craftsmanship and attention to detail.</p>
+            <p>Today, we work with skilled Pranil Polymerss across the country, combining time-honored techniques with modern designs. Each piece in our collection is crafted with care, using premium materials that ensure lasting quality.</p>
+            <p>Our mission is to bring you accessories that not only look stunning but also tell a story—pieces that become a part of your journey and create lasting memories.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values -->
+      <section class="container py-12">
+        <h2 class="text-2xl font-bold text-center mb-8">Our Values</h2>
+        <div class="grid md:grid-cols-3 gap-6" id="values-grid"></div>
+      </section>
+
+      <!-- Stats -->
+      <section class="container py-12">
+        <div class="bg-secondary rounded-2xl p-8 md:p-12">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-3xl md:text-4xl font-bold text-primary">8+</div><div class="text-sm text-muted-foreground mt-1">Years of Excellence</div></div>
+            <div><div class="text-3xl md:text-4xl font-bold text-primary">5000+</div><div class="text-sm text-muted-foreground mt-1">Happy Customers</div></div>
+            <div><div class="text-3xl md:text-4xl font-bold text-primary">500+</div><div class="text-sm text-muted-foreground mt-1">Products Crafted</div></div>
+            <div><div class="text-3xl md:text-4xl font-bold text-primary">50+</div><div class="text-sm text-muted-foreground mt-1">Pranil Polymers Partners</div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-card nav-blur border-t safe-area-inset-bottom">
+      <div class="flex items-center justify-around h-16" id="bottom-nav"></div>
+    </nav>
+
+    <script src="./assets/js/store.js"></script>
+    <script src="./assets/js/ui.js"></script>
+    <script>
+      const values = [
+        { icon: 'award', title: 'Quality First', description: 'We source only the finest materials and work with skilled Pranil Polymerss to create products that stand the test of time.' },
+        { icon: 'heart', title: 'Passion for Craft', description: 'Every piece tells a story. Our dedication to traditional craftsmanship ensures each product is unique and special.' },
+        { icon: 'users', title: 'Customer Focus', description: 'Your satisfaction is our priority. We provide personalized service and support to help you find the perfect piece.' },
+      ];
+      const valueIcons = {
+        award: '<svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>',
+        heart: '<svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+        users: '<svg class="w-6 h-6 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+      };
+      document.addEventListener('DOMContentLoaded', () => {
+        const grid = document.getElementById('values-grid');
+        if (grid) {
+          grid.innerHTML = values.map((v, i) => `
+            <div class="p-6 bg-card rounded-xl card-shadow text-center animate-fade-in" style="animation-delay:${i*100}ms">
+              <div class="w-12 h-12 mx-auto mb-4 rounded-xl bg-accent/10 flex items-center justify-center">${valueIcons[v.icon]}</div>
+              <h3 class="font-semibold text-lg mb-2">${v.title}</h3>
+              <p class="text-sm text-muted-foreground">${v.description}</p>
+            </div>
+          `).join('');
+        }
+      });
+    </script>
+  </body>
+</html>
